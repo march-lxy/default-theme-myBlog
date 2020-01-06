@@ -16,15 +16,19 @@ module.exports = {
         nav: require('./nav'),
         sidebar: require('./sidebarConf'),
         sidebarDepth: 2,
-        lastUpdated: '最后更新时间:',
+        lastUpdated: '最后更新时间',
         searchMaxSuggestoins: 10,
         serviceWorker: {
             updatePopup: {
-                message: "New content is available.",
-                buttonText: 'Refresh'
+                // 刷新内容的弹窗
+                message: '发现新内容',
+                buttonText: '刷新'
             }
         },
-        editLinks: true,
+        docsRepo: 'ACchenjiangbo/my_blog',
+        docsBranch: 'master', // git 源仓库 仓库分支
+        docsDir: 'docs', // 仓库下的文件夹
+        editLinks: true, // 编辑链接
         editLinkText: '在 GitHub 上编辑此页 ！',
         smoothScroll: true,
         plugins: [
