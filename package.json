@@ -1,5 +1,5 @@
 {
-  "name": "vuepress",
+  "name": "my_blog",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -9,8 +9,8 @@
     "docs:build": "vuepress build docs"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "ACchenjiangbo",
+  "license": "MIT",
   "devDependencies": {
     "@vuepress/plugin-active-header-links": "^1.2.0",
     "@vuepress/plugin-back-to-top": "^1.2.0"

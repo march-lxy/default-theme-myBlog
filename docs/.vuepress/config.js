@@ -18,7 +18,6 @@ module.exports = {
         nav: require('./nav'),
         sidebar: require('./sidebarConf'),
         sidebarDepth: 3,
-        lastUpdated: '最后更新时间',
         searchMaxSuggestoins: 10,
         serviceWorker: {
             updatePopup: {
@@ -30,8 +29,6 @@ module.exports = {
         docsRepo: 'ACchenjiangbo/my_blog',
         docsBranch: 'master', // git 源仓库 仓库分支
         docsDir: 'docs', // 仓库下的文件夹
-        editLinks: true, // 编辑链接
-        editLinkText: '在 GitHub 上编辑此页 ！',
         smoothScroll: true,
         plugins: [
             '@vuepress/back-to-top',
@@ -52,7 +49,11 @@ module.exports = {
                 options: {
                     el: '#valine-vuepress-comment',
                     appId: 'NK6vtvs0tsr7ajg2kQzv0bTC-gzGzoHsz',
-                    appKey: 'XGQw70J7pvctx0FXIHpTB3IK'
+                    appKey: 'XGQw70J7pvctx0FXIHpTB3IK',
+                    placeholder: 'ヾﾉ≧∀≦)o来啊，快活啊!',
+                    avatar: 'identicon',
+                    visitor: true,
+                    recordIP: true,
                 }
             }
         ]
