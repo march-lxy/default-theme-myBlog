@@ -6,16 +6,18 @@ module.exports = {
     head: [
         ['link', {
             rel: 'icon',
-            href: '/logo.gif'
+            href: '/favicon.ico'
         }]
     ],
     markdown: {
         lineNumbers: true
     },
+
     themeConfig: {
+        logo: '/headLogo.png',
         nav: require('./nav'),
         sidebar: require('./sidebarConf'),
-        sidebarDepth: 2,
+        sidebarDepth: 3,
         lastUpdated: '最后更新时间',
         searchMaxSuggestoins: 10,
         serviceWorker: {
@@ -32,18 +34,12 @@ module.exports = {
         editLinkText: '在 GitHub 上编辑此页 ！',
         smoothScroll: true,
         plugins: [
-            '@vuepress/plugin-back-to-top',
-            '@vuepress/plugin-active-header-links',
-        ]
-    },
-    themeEntry: {
-        plugins: [
-            '@vuepress/plugin-back-to-top',
-            '@vuepress/plugin-active-header-links',
+            '@vuepress/back-to-top',
+            '@vuepress/active-header-links',
         ]
     },
     plugins: [
-        '@vuepress/plugin-back-to-top',
+        '@vuepress/back-to-top',
         ['@vuepress/active-header-links', {
             sidebarLinkSelector: '.sidebar-link',
             headerAnchorSelector: '.header-anchor'
