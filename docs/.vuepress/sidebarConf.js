@@ -4,19 +4,18 @@ const rootpath = path.dirname(__dirname) //执行一次dirname将目录定位到
 const docs = rootpath;
 const utils = require(rootpath + '/utils/index.js');
 const filehelper = require(rootpath + '/utils/getFilenames.js');
-
-/**
- * 侧边栏的配置（顺序无所谓）
- * utils.genSidebar('Java基础', filehelper.getFileName(docs+"/Java/Basic/"), false),
- */
 module.exports = {
 
-    // .... 省略部分
-
-    // 其他
-    '/technology-sharing/vue/': utils.genSidebar('VUE', filehelper.getFileName(docs + "/technology-sharing/vue/"), false),
-    '/technology-sharing/node/': utils.genSidebar('NODE', filehelper.getFileName(docs + "/technology-sharing/node/"), false),
+    // 技术总结
+    '/technology-sharing/vue/': utils.genSidebar('Vue相关问题', filehelper.getFileName(docs + "/technology-sharing/vue/"), false),
+    '/technology-sharing/node/': utils.genSidebar('NodeJs&&爬虫', filehelper.getFileName(docs + "/technology-sharing/node/"), false),
     '/technology-sharing/jsDir/': utils.genSidebar('JS', filehelper.getFileName(docs + "/technology-sharing/jsDir/"), false),
+    '/technology-sharing/Linux/': utils.genSidebar('Linux', filehelper.getFileName(docs + "/technology-sharing/Linux/"), false),
+    '/technology-sharing/nuxt/': utils.genSidebar('nuxt', filehelper.getFileName(docs + "/technology-sharing/nuxt/"), false),
+    '/technology-sharing/css/': utils.genSidebar('css', filehelper.getFileName(docs + "/technology-sharing/cssDir/"), false),
+    // 实用工具
+
+    '/tools/': utils.genSidebar('实用工具', filehelper.getFileName(docs + "/tools/"), false),
     // 一定要放在最后！！！
     // 根目录下的 sidebar, 对于所有未匹配到的都会应用该 sidebar
     // '/': [''] // 此处选择禁用

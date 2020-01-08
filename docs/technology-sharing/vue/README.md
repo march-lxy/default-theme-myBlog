@@ -1,9 +1,5 @@
 ---
 title: vue组件传值--详细版
-description: false
-toc: true
-comments: true
-date:  2020-1-6 15:15:54
 categories:
 - vue
 tags:

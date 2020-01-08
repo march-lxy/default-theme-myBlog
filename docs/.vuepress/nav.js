@@ -21,25 +21,13 @@ module.exports = [{
             },
             {
                 text: 'css',
-                link: '/technology-sharing/css/'
+                link: '/technology-sharing/cssDir/'
             }
         ]
     },
     {
         text: '实用工具',
-        items: [{
-                text: '前端学习路线',
-                link: 'http://www.imooc.com/article/261756'
-            },
-            {
-                text: '前端学习视频',
-                link: '/front-end-video/'
-            },
-            {
-                text: '全栈',
-                link: '/resource/'
-            }
-        ]
+        link: '/tools/'
     },
     {
         text: '个人主页',

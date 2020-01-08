@@ -10,7 +10,10 @@ module.exports = {
         }]
     ],
     markdown: {
-        lineNumbers: true
+        lineNumbers: true,
+        toc: {
+            includeLevel: [3, 4]
+        }
     },
 
     themeConfig: {
@@ -26,18 +29,18 @@ module.exports = {
                 buttonText: '刷新'
             }
         },
-        docsRepo: 'ACchenjiangbo/my_blog',
+        docsRepo: 'ACchenjiangbo/default-theme-myBlog',
         docsBranch: 'master', // git 源仓库 仓库分支
         docsDir: 'docs', // 仓库下的文件夹
         smoothScroll: true,
         plugins: [
-            '@vuepress/back-to-top',
-            '@vuepress/active-header-links',
+            '@vuepress/plugin-back-to-top',
+            '@vuepress/plugin-active-header-links',
         ]
     },
     plugins: [
-        '@vuepress/back-to-top',
-        ['@vuepress/active-header-links', {
+        '@vuepress/plugin-back-to-top',
+        ['@vuepress/plugin-active-header-links', {
             sidebarLinkSelector: '.sidebar-link',
             headerAnchorSelector: '.header-anchor'
         }],
