@@ -39,7 +39,7 @@ module.exports = {
         ]
     },
     plugins: [
-        '@vuepress/plugin-back-to-top',
+        ['@vuepress/back-to-top', true],
         ['@vuepress/plugin-active-header-links', {
             sidebarLinkSelector: '.sidebar-link',
             headerAnchorSelector: '.header-anchor'
